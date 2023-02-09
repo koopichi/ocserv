@@ -12,8 +12,8 @@ mkdir certificates
 cd certificates
 
 cat << EOF > ca.tmpl
-cn = "VPN"
-organization = "koopichi"
+cn = "VPN CA"
+organization = "Big Corp"
 serial = 1
 expiration_days = 3650
 ca
