@@ -32,7 +32,7 @@ docker build -t ocserv https://github.com/koopichi/ocserv.git
 ```bash
 docker run --name ocserv --privileged -p 443:443 -p 443:443/udp -d ocserv
 ```
-4. Run container at Startup
+4. Set container to run at Startup
 ```bash
 docker update --restart unless-stopped $(docker ps -q)
 ```
