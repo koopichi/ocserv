@@ -32,36 +32,36 @@ docker build -t ocserv https://github.com/koopichi/ocserv.git
 ```bash
 docker run --name ocserv --privileged -p 443:443 -p 443:443/udp -d ocserv
 ```
-3.1 Run container at Startup
+4. Run container at Startup
 ```bash
 docker update --restart unless-stopped $(docker ps -q)
 ```
-4. Add user
+5. Add user
 ```bash
 docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd testUserName
 ```
 
-5. Change user password
+6. Change user password
 ```bash
 docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd testUserName
 ```
 
-6. Delete user
+7. Delete user
 ```bash
 docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -d testUserName
 ```
 
-7. Lock user
+8. Lock user
 ```bash
 docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -l testUserName
 ```
 
-8. Unlock user
+9. Unlock user
 ```bash
 docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -u testUserName
 ```
 
-9. Show all users and their hashed password
+10. Show all users and their hashed password
 ```bash
 docker exec -ti ocserv cat /etc/ocserv/ocpasswd
 ```
