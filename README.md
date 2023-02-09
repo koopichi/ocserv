@@ -1,6 +1,4 @@
 # OpenConnect-VPN-Server
-**2022 OCT UPDATE**: We dockerized and added Dockerfile to run it anywhere you want on any linux distro easily.
-Buggy script for configuring OpenConnect (ocserv) protocol on the server easily and automatically.
 ## Script Installation
 Tested on ubuntu 18.04 and 16.04.
 
@@ -34,7 +32,10 @@ docker build -t ocserv https://github.com/koopichi/ocserv.git
 ```bash
 docker run --name ocserv --privileged -p 443:443 -p 443:443/udp -d ocserv
 ```
-
+3.1 Run container at Startup
+```bash
+docker update --restart unless-stopped $(docker ps -q)
+```
 4. Add user
 ```bash
 docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd testUserName
