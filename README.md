@@ -1,5 +1,8 @@
 ## Docker Installation
 1. Install Docker
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/koopichi/ocserv/master/dk.sh)
+```
 2. Build docker image
 ```bash
 docker build -t ocserv https://github.com/koopichi/ocserv.git
