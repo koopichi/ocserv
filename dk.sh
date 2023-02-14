@@ -4,7 +4,7 @@ sudo apt-get install \
     ca-certificates \
     curl \
     gnupg \
-    lsb-release -y
+    lsb-release
 	
 	
 	
@@ -23,5 +23,3 @@ sudo apt-get update
 
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
-
-sudo bash <(curl -Ls https://github.com/teddysun/across/raw/master/bbr.sh)
