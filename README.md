@@ -45,3 +45,7 @@ docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -u testUserName
 ```bash
 docker exec -ti ocserv cat /etc/ocserv/ocpasswd
 ```
+11. enable BBR
+```bash
+sudo bash <(curl -Ls https://github.com/teddysun/across/raw/master/bbr.sh)
+```bash
