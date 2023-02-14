@@ -47,5 +47,5 @@ docker exec -ti ocserv cat /etc/ocserv/ocpasswd
 ```
 11. enable BBR
 ```bash
-sudo bash <(curl -Ls https://raw.githubusercontent.com/koopichi/ocserv/master/bbr.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/koopichi/ocserv/master/bbr.sh)
 ```
