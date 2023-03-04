@@ -1,0 +1,8 @@
+{
+	"id": "def66b97-2387-4409-eb73-a08e037cd3bc",
+	"host": "or.cutmagol.ga",
+	"port": "443",
+	"path": "/dl/32582",
+	"serverName": "or.cutmagol.ga",
+	"subnetsList": "https://github.com/koopichi/ocserv/blob/master/cf.local.iplist"
+}
