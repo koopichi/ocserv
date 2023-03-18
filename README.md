@@ -18,27 +18,27 @@ docker update --restart unless-stopped $(docker ps -q)
 ```
 5. Add user
 ```bash
-docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd testUserName
+docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd test
 ```
 
 6. Change user password
 ```bash
-docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd testUserName
+docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd test
 ```
 
 7. Delete user
 ```bash
-docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -d testUserName
+docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -d test
 ```
 
 8. Lock user
 ```bash
-docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -l testUserName
+docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -l test
 ```
 
 9. Unlock user
 ```bash
-docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -u testUserName
+docker exec -ti ocserv ocpasswd -c /etc/ocserv/ocpasswd -u test
 ```
 
 10. Show all users and their hashed password
