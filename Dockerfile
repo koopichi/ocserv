@@ -1,10 +1,10 @@
 FROM alpine:3.13
 
 ENV OCSERV_VERSION 1.1.2
-ENV CA_CN koovpn
+ENV CA_CN ARASH
 ENV CA_ORG koopichi
 ENV SRV_CN koopichi server
-ENV SRV_ORG navazi
+ENV SRV_ORG NAVAZI
 RUN set -ex \
     && apk add --no-cache --virtual .build-dependencies \
     readline-dev \
