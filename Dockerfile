@@ -66,7 +66,6 @@ RUN set -ex \
 WORKDIR /etc/ocserv
 COPY ocserv.conf /etc/ocserv/ocserv.conf
 COPY entrypoint.sh /entrypoint.sh
-VOLUME ["/etc/ocserv"]
 EXPOSE 443/tcp
 EXPOSE 443/udp
 ENTRYPOINT ["sh", "/entrypoint.sh"]
