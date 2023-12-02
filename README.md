@@ -10,7 +10,7 @@ docker build -t ocserv https://github.com/koopichi/ocserv.git
 
 3. Run docker container
 ```bash
-docker run --name ocserv --privileged -p 8443:443 -p 8443:443/udp -v ocserv:/etc/ocserv -d ocserv
+docker run --name ocserv --privileged -p 8080:443 -p 8080:443/udp -v ocserv:/etc/ocserv -d ocserv
 ```
 4. Set container to run at Startup
 ```bash
