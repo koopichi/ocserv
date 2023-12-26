@@ -7,7 +7,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/koopichi/ocserv/master/dk.sh)
 ```bash
 docker build -t ocserv https://github.com/koopichi/ocserv.git
 ```
-3. presist user and pass
+3. persist user&pass
 ```
 docker run --name ocserv --privileged -p 8080:443 -p 8080:443/udp --mount type=bind,source="$(pwd)"/ocpasswd,target=/etc/ocserv/ocpasswd -d ocserv
 ```
