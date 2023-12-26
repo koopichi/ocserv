@@ -7,10 +7,13 @@ bash <(curl -Ls https://raw.githubusercontent.com/koopichi/ocserv/master/dk.sh)
 ```bash
 docker build -t ocserv https://github.com/koopichi/ocserv.git
 ```
-
-3. Run docker container
+3. presist user and pass
+```
+docker run --name ocserv --privileged -p 8080:443 -p 8080:443/udp --mount type=bind,source="$(pwd)"/ocpasswd,target=/etc/ocserv/ocpasswd -d ocserv
+```
+3.1 Run docker container
 ```bash
-docker run --name ocserv --privileged -p 8080:443 -p 8080:443/udp -v /root/ocserv:/etc/ocserv -d ocserv
+docker run --name ocserv --privileged -p 8080:443 -p 8080:443/udp -v ocserv:/etc/ocserv -d ocserv
 ```
 4. Set container to run at Startup
 ```bash
